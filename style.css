@@ -1,0 +1,33 @@
+body {
+  background-image: url(mundo.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+  background-size: 35%;
+  background-color: currentcolor;
+  background-attachment: fixed
+}
+
+label {
+  color: #fff;
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+  body {
+    min-width: 100%;
+    background-image: url(mundo.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 115%;
+    background-attachment: fixed;
+  }
+
+  #containerFormulario {
+    padding: 10px !important;
+  }
+
+  #formulario {
+    padding: 15px !important;
+  }
+}
