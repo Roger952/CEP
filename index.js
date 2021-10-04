@@ -18,9 +18,7 @@ function procurarCEP() {
 
     var cepInserido = document.getElementById('cep').value;
 
-    if (/^\d{5}-\d{3}$/g.test(cepInserido)) {
-
-        cepInserido = cepInserido.replaceAll(/[^0-9]/g, '');
+    if (/^\d{5}-\d{3}$/g.test(cepInserido) || /^\d{8}$/g.test(cepInserido)) {
 
         const xhttp = new XMLHttpRequest();
         xhttp.open("GET", 'http://cep.republicavirtual.com.br/web_cep.php?cep=' + cepInserido, true);
